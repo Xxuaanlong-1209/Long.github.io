@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Danh sách sản phẩm</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./bootstrap5/css/bootstrap.min.css">
+        <style>
+            #menu li {
+                color: #f1f1f1;
+                display: inline-block;
+                width: 150px;
+                height: 60px;
+                line-height: 60px;
+                }
+                #menu ul {
+                background:#7FFFD4;
+                list-style-type: none;
+                overflow: hidden;
+                width: 100%;
+                text-align: center;
+                }
+                #menu ul li > .sub-menu {
+                display: none;
+                position: absolute;
+                }
+                .sub-menu {
+                display: none;
+                position: absolute;
+                }
+                #menu li {
+                position: relative;
+                }
+        </style>
+    </head>
+    <body class="container p-5 my-5 border">
+        <div id="menu">
+            <ul>
+              <li><a href="#" class="bg-light"><img style="height: 50px;" src="https://brademar.com/wp-content/uploads/2022/09/Sua-Moc-Chau-Logo-PNG-2.png" alt=""></a></li>
+              <li><a href="#">Trang chủ</a></li>
+              <li><a href="#">Tìm kiếm sản phẩm</a></li>
+              <li>
+                <a href="#">Menu</a>
+                <ul class="sub-menu">
+                    <li><a href="#">menu1</a></li>
+                    <li><a href="#">menu2</a></li>
+                    <li><a href="#">menu3</a></li>
+                    <li><a href="#">menu4</a></li>
+                </ul>
+            </li>
+              <li><a href="#">Thông tin</a></li>
+              <li><a href="#">Trang quản lý</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <h2>Tìm kiếm Sản Phẩm</h2>
+            <div class="container" style="display: flex;">
+                <input class="form-control" type="search" placeholder="Tìm kiếm" aria-label="search" style="width: 50%;"> 
+                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Tìm kiếm</button>
+            </div>
+        </div>
+        <br>
+        <table class="table table-borderless">
+            <tr>
+                <td style="text-align: center;"><img style="height: 300px;" src="https://toplist.vn/images/800px/sua-tuoi-thanh-trung-moc-chau-542191.jpg" alt=""></td>
+                <td style="text-align: center;"><img style="height: 300px;" src="https://cf.shopee.vn/file/400d3a64e8e503a06b64743c10854926" alt=""></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">Sữa thanh trùng</td>
+                <td style="text-align: center;">Sữa tuyệt trùng</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;"><b>20.000đ</b></td>
+                <td style="text-align: center;"><b>10.000đ</b></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;"><button class="btn btn-success my-2 my-sm-0" type="submit">Xem chi tiết</button></td>
+                <td style="text-align: center;"><button class="btn btn-success my-2 my-sm-0" type="submit">Xem chi tiết</button></td>
+            </tr>
+        </table>
+    </body>
+</html>
